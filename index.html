@@ -1,85 +1,155 @@
 <!DOCTYPE html>
-<html lan="en">
+<html lan="en-us">
 	<head>
 		<meta charset="utf-8" />
 		<meta
 			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
 		/>
-		<meta name="description" content="Portfolio Site" />
+		<meta
+			name="description"
+			content="A portfolio site written as an assignment for Code the Dream's Intro to Programming - Redcomet course"
+		/>
 		<meta name="author" content="Chung Kao" />
-		<title>Chung Kao</title>
-		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<title>Chung Kao's Portfolio</title>
+		<link href="css/style.css" rel="stylesheet" />
 	</head>
+
 	<body>
-		<h1>About</h1>
-		<p>
-			A highly-organized, detail oriented, and self-motivated individual who is
-			quick to adapt to a new or changing environment, I aspire to becoming a
-			full-stack software engineer and, with determination, passion, and hard
-			work, am committed to overcome any obstacles that might come in the way. I
-			am trilingual⏤able to work in English-, Chinese- and Japanese-speaking
-			environments⏤and am fluent in MacOS and Microsoft software and
-			applications and knowledgeable in web applications and the Internet. I
-			have years of experience in, and is good at, collaborative work and am a
-			natural public speaker. I work to excel and will not compromise quality
-			merely to yield quantity or meet time constraints. My motto is Do It and
-			Do It Well.
-		</p>
-		<h1>Experience</h1>
-		<h3>English-Chinese Translator</h3>
-		<h4>WritePath, October 2020 - Present</h4>
-		<p>
-			WritePath is an online platform for translation, copy writing and
-			copyediting with an industry focus on technical, financial and medical
-			translations. Human translation experts are supported by translation
-			technology to deliver higher quality, better consistency and faster return
-			times. I work as a freelancer in the fields of corporate annual reports
-			and website and applications.
-		</p>
-		<h3>English-Chinese Translator</h3>
-		<h4>HouGuan Translation Co., Ltd., Novemver 2020 - Present</h4>
-		<p>
-			HouGuan Translation Co. provides translation/interpretation services in 40
-			languages relating to 30 categories of business communication.
-			Headquarters in Taipei, Taiwan, it's doing business in China, Hong Kong,
-			Australia and Canada as well. I do part-time Chinese-to-English
-			translation of corporate annual reports for the company.
-		</p>
-		<h3>Code.7370 Trainee</h3>
-		<h4>The Last Mile/CALPIA, September 2016 - August 2018</h4>
-		<p>
-			Sponsored by The Last Mile, the innovative prisoners-to-coders Code.7370
-			program was launched in 2014 by the California Department of Corrections
-			and Rehabilitation's Prison Industry Authority under its Career Technical
-			Education program. Trainees of the Code.7370 program undergo a 18-months
-			training, learning front-end (track 1), back-end (track 2) and advanced
-			algorithm (track 3) in web apps and software development and, once
-			graduated, have the opportunity to work for The Last Mile Works, a
-			for-profit joint venture of TLM and CALPIA that provides work to inmate
-			coders for community projects. I graduated the program while working for
-			CALPIA.
-		</p>
-		<h3>News Writer and Distribution Manager</h3>
-		<h4>San Quentin News, November 2014 - September 2016</h4>
-		<p>
-			The San Quentin News is written and published by the inmates at the San
-			Quentin State Prison with the goal to promote public safety and advance
-			social justice. It is sponsored by multiple grants and individual
-			donations and distributed throughout California prisons and to the
-			community beyond. It won the award of the Society of Professional
-			Journalists for outstanding accomplishments. All of its staff writers are
-			members of the SPJ Northern California chapter, who holds weekly
-			continuing education in prison for the SQN staff. I managed the
-			publication's subscription, distribution, and business analytics and, as a
-			staff writer, spealized in legal news.
-		</p>
-		<h1>Connect</h1>
-		<a href="">chungckao@gmail.com</a>
-		<a href="https://github.com/Sanlung" target="_blank">GitHub</a>
-		<a href="https://www.linkedin.com/in/chung-kao/" target="_blank"
-			>LinkedIn</a
-		>
-		<script src="./index.js"></script>
+		<div class="page-container">
+			<header class="header">
+				<div class="header-container">
+					<span class="avatar">
+						<img src="" alt="Avatar of Chung Kao" />
+					</span>
+					<nav class="navbar">
+						<ul>
+							<li><a href="#about">About</a></li>
+							<li><a href="experiene">Experience</a></li>
+							<li><a href="#connect">Connect</a></li>
+							<li><img src="" alt="Mini avatar of Chung Kao" /></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<main class="main-content">
+				<section class="tag-line">
+					<h1>Chung Kao</h1>
+					<p>
+						Want-to-be fullstack software engineer and aspiring entrepreneur.
+					</p>
+				</section>
+
+				<section class="about-section" id="about">
+					<h2>About</h2>
+					<p>
+						A highly-organized, detail oriented, and self-motivated individual
+						who is quick to adapt to a new or changing environment, I aspire to
+						becoming a full-stack software engineer and, with determination,
+						passion, and hard work, am committed to overcome any obstacles that
+						might come in the way. I am trilingual⏤able to work in English-,
+						Chinese- and Japanese-speaking environments⏤and am fluent in MacOS
+						and Microsoft software and applications and knowledgeable in web
+						applications and the Internet. I have years of experience in, and is
+						good at, collaborative work and am a natural public speaker. I work
+						to excel and will not compromise quality merely to yield quantity or
+						meet time constraints. My motto is Do It and Do It Well.
+					</p>
+				</section>
+
+				<seciton class="experience-seciton" id="experience">
+					<h2>Experience</h2>
+					<h3>English-Chinese Translator</h3>
+					<p><strong>WritePath, October 2020 - Present</strong></p>
+					<p>
+						WritePath is an online platform for translation, copy writing and
+						copyediting with an industry focus on technical, financial and
+						medical translations. Human translation experts are supported by
+						translation technology to deliver higher quality, better consistency
+						and faster return times. I work as a freelancer in the fields of
+						corporate annual reports and website and applications.
+					</p>
+					<h3>English-Chinese Translator</h3>
+					<p>
+						<strong
+							>HouGuan Translation Co., Ltd., Novemver 2020 - Present</strong
+						>
+					</p>
+					<p>
+						HouGuan Translation Co. provides translation/interpretation services
+						in 40 languages relating to 30 categories of business communication.
+						Headquarters in Taipei, Taiwan, it's doing business in China, Hong
+						Kong, Australia and Canada as well. I do part-time
+						Chinese-to-English translation of corporate annual reports for the
+						company.
+					</p>
+					<h3>Code.7370 Trainee</h3>
+					<p>
+						<strong>The Last Mile/CALPIA, September 2016 - August 2018</strong>
+					</p>
+					<p>
+						Sponsored by The Last Mile, the innovative prisoners-to-coders
+						Code.7370 program was launched in 2014 by the California Department
+						of Corrections and Rehabilitation's Prison Industry Authority under
+						its Career Technical Education program. Trainees of the Code.7370
+						program undergo a 18-months training, learning front-end (track 1),
+						back-end (track 2) and advanced algorithm (track 3) in web apps and
+						software development and, once graduated, have the opportunity to
+						work for The Last Mile Works, a for-profit joint venture of TLM and
+						CALPIA that provides work to inmate coders for community projects. I
+						graduated the program while working for CALPIA.
+					</p>
+					<h3>News Writer and Distribution Manager</h3>
+					<p>
+						<strong>San Quentin News, November 2014 - September 2016</strong>
+					</p>
+					<p>
+						The San Quentin News is written and published by the inmates at the
+						San Quentin State Prison with the goal to promote public safety and
+						advance social justice. It is sponsored by multiple grants and
+						individual donations and distributed throughout California prisons
+						and to the community beyond. It won the award of the Society of
+						Professional Journalists for outstanding accomplishments. All of its
+						staff writers are members of the SPJ Northern California chapter,
+						who holds weekly continuing education in prison for the SQN staff. I
+						managed the publication's subscription, distribution, and business
+						analytics and, as a staff writer, spealized in legal news.
+					</p>
+				</seciton>
+
+				<section class="connect-section" id="connect">
+					<h2>Connect</h2>
+					<ul>
+						<li>
+							<a
+								href="mailto:chungckao@gmail.com?subject=About your online portfolio"
+								>Email</a
+							>
+						</li>
+						<li>
+							<a href="https://github.com/Sanlung" target="_blank">GitHub</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/chung-kao/" target="_blank"
+								>LinkedIn</a
+							>
+						</li>
+					</ul>
+				</section>
+			</main>
+
+			<footer class="footer">
+				<div class="footer-container">
+					<span>&copy; 2021 by Chung Kao</span>
+					<ul class="social-links">
+						<li class="facebook-logo">Facebook</li>
+						<li class="twitter-log">Twitter</li>
+						<li class="instagram-logo">Instagram</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+		<script src="js/index.js"></script>
 	</body>
 </html>
