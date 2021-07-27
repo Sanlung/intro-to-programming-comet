@@ -133,8 +133,7 @@
 						<li>
 							<a
 								href="mailto:chungckao@gmail.com?subject=About your online portfolio"
-								>Email</a
-							>
+								>Email</a>
 						</li>
 						<li>
 							<a href="https://github.com/Sanlung" target="_blank">GitHub</a>
@@ -146,6 +145,30 @@
 						</li>
 					</ul>
 				</section>
+
+        <section class="leave-message-section" id="leave-message">
+            <h2>Leave a Message</h2>
+            <form action="" name="leave_message">
+              <div class="name_field">
+                <label for="name">Name</label><br/>
+                <input type="text" name="name" required />
+              </div>
+              <div class="email_field">
+                <label for="email">Email address</label><br/>
+                <input type="email" name="email" required />
+              </div>
+              <div class="message_field">
+                <label for="message">Message</label><br/>
+                <textarea name="message" cols="30" rows="8" placeholder="Please leave a message..." required></textarea>
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+
+          <section class="messages-section" id="messages">
+            <h2>Messages</h2>
+            <ul class="msg-list"></ul>
+          </section>
 			</main>
 
 			<footer class="footer">
