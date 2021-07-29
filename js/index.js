@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 		//Display new message on top
 		messageList.insertAdjacentElement("afterbegin", newMessage);
 		toggleDisplay();
-		// Handle local storage
+		// Add message info to local storage
 		const messages = getStoredMessages();
 		messages.push({name: name, email: email, message: message});
 		localStorage.setItem("storedMessages", JSON.stringify(messages));
@@ -65,20 +65,52 @@ document.addEventListener("DOMContentLoaded", (e) => {
 	// Function to create new message
 	function createNewMessage(name, email, message) {
 		const messageLi = document.createElement("li");
-		messageLi.innerHTML = `<a href='mailto:${email}?subject=Your message for Chung Kao'>${name}</a><br><span>${message}</span><br>`;
-		/*
-      const link = document.createElement("a");
-      link.href = `mailto:${email}?subject=Your message to Chung Kao`;
-      link.textContent = name;
-      messageLi.appendChild(link);
-      const br = document.createElement("br");
-      messageLi.appendChild(br);
-      const span = document.createElement("span");
-      span.textContent = message;
-      messageLi.appendChild(span);
-      messageLi.appendChild(br);
-      */
-		messageLi.appendChild(createRemoveButton());
+		// messageLi.innerHTML = `<a href='mailto:${email}?subject=Your message for Chung Kao'>${name}</a><br><span>${message}</span><br>`;
+		const link = document.createElement("a");
+		link.href = `mailto:${email}?subject=Your message to Chung Kao`;
+		link.textContent = name;
+		const span = document.createElement("span");
+		span.textContent = " wrote:";
+		const p = document.createElement("p");
+		p.textContent = message;
+		messageLi.append(link, span, p, createRemoveButton(), createEditButton());
+
+		// Add event listener to remvoe/edit buttons
+		messageLi.addEventListener("click", (e) => {
+			if (e.target.tagName === "BUTTON") {
+				const button = e.target;
+				const li = button.parentNode;
+				const p = li.querySelector("p");
+				const action = button.textContent;
+				const buttonActions = {
+					Remove: () => {
+						const name = li.firstElementChild.textContent;
+						const storedMessages = getStoredMessages();
+						const messages = storedMessages.filter((el) => el.name !== name);
+						localStorage.setItem("storedMessages", JSON.stringify(messages));
+						li.remove();
+						toggleDisplay();
+					},
+					Edit: () => {
+						const textarea = document.createElement("textarea");
+						textarea.cols = "30";
+						textarea.rows = "5";
+						textarea.value = p.textContent;
+						p.textContent = "";
+						p.appendChild(textarea);
+						button.textContent = "Save";
+					},
+					Save: () => {
+						const textarea = p.firstElementChild;
+						const message = textarea.value;
+						p.removeChild(textarea);
+						p.textContent = message;
+						button.textContent = "Edit";
+					},
+				};
+				buttonActions[action]();
+			}
+		});
 		return messageLi;
 	}
 
@@ -87,17 +119,15 @@ document.addEventListener("DOMContentLoaded", (e) => {
 		const removeButton = document.createElement("button");
 		removeButton.textContent = "Remove";
 		removeButton.type = "button";
-		removeButton.addEventListener("click", (e) => {
-			const button = e.target;
-			const entry = button.parentNode;
-			const name = entry.firstElementChild.textContent;
-			const storedMessages = getStoredMessages();
-			const messages = storedMessages.filter((el) => el.name !== name);
-			localStorage.setItem("storedMessages", JSON.stringify(messages));
-			entry.remove();
-			toggleDisplay();
-		});
 		return removeButton;
+	}
+
+	// Function to create edit button for message
+	function createEditButton() {
+		const editButton = document.createElement("button");
+		editButton.textContent = "Edit";
+		editButton.type = "button";
+		return editButton;
 	}
 
 	// Function to display or hide #messges section
