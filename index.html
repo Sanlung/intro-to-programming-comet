@@ -1,187 +1,381 @@
 <!DOCTYPE html>
 <html lang="en-us">
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-			/>
-		<meta name="author" content="Chung Kao" />
-		<meta
-			name="description"
-			content="A portfolio site as a project for Code the Dream's Intro to Programming - Red Comet course"
-		/>
-		<title>Chung Kao's Portfolio</title>
-		<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
-		<link rel="manifest" href="img/site.webmanifest" />
-		<link href="css/style.css" rel="stylesheet" />
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Chung Kao" />
+    <meta
+      name="description"
+      content="A portfolio site as a project for Code the Dream's Intro to Programming - Red Comet course"
+    />
+    <title>Chung Kao's Portfolio</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="css/index.css" rel="stylesheet" />
+  </head>
 
-	<body>
-		<div class="page-container">
-			<header class="header">
-				<div class="header-container">
-					<span class="avatar">
-						<img src="" alt="Avatar of Chung Kao" />
-					</span>
-					<nav class="navbar">
-						<ul>
-							<li><a href="#about">About</a></li>
-							<li><a href="experiene">Experience</a></li>
-							<li><a href="#connect">Connect</a></li>
-							<li><img src="" alt="Mini avatar of Chung Kao" /></li>
-						</ul>
-					</nav>
-				</div>
-			</header>
+  <body>
+    <div class="page-container">
+      <header class="header">
+        <img class="avatar" src="img/avatar.jpg" alt="Avatar of Chung Kao" />
+        <div class="heading">
+          <h1 class="heading-primary">Chung C. Kao</h1>
+          <p class="tag-line">Aspiring fullstack engineer</p>
+        </div>
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education"></a>Education</li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#connect">Connect</a></li>
+            <li>
+              <img
+                class="favicon"
+                src="img/favicon.jpeg"
+                alt="Favicon of Chung Kao"
+              />
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-			<main class="main-content">
-				<section class="tag-line">
-					<h1>Chung Kao</h1>
-					<p>
-						Want-to-be fullstack software engineer and aspiring entrepreneur.
-					</p>
-				</section>
+      <main class="main-content">
+        <section class="about-section" id="about">
+          <div class="center-h2">
+            <h2 class="heading-secondary">About</h2>
+          </div>
+          <div class="intro">
+            <figure class="profile-frame">
+              <img
+                src="img/profile.jpg"
+                alt="Profile picture of Chung Kao"
+                class="profile-pic"
+              />
+            </figure>
+            <p class="intro-text">
+              I am a highly-organized, detail oriented, and self-motivated
+              individual who is quick to adapt to a new or changing environment,
+              I aspire to becoming a full-stack software engineer and, with
+              determination, passion, and hard work, am committed to overcome
+              any obstacles that might come in the way. I am trilingual⏤able to
+              work in English-, Chinese- and Japanese-speaking environments⏤and
+              am fluent in MacOS and Microsoft software and applications and
+              knowledgeable in web applications and the Internet. I have years
+              of experience in, and is good at, collaborative work and am a
+              natural public speaker. I work to excel and will not compromise
+              quality merely to yield quantity or meet time constraints. My
+              motto is Do It and Do It Well.
+            </p>
+          </div>
+        </section>
 
-				<section class="about-section" id="about">
-					<h2>About</h2>
-					<p>
-						A highly-organized, detail oriented, and self-motivated individual
-						who is quick to adapt to a new or changing environment, I aspire to
-						becoming a full-stack software engineer and, with determination,
-						passion, and hard work, am committed to overcome any obstacles that
-						might come in the way. I am trilingual⏤able to work in English-,
-						Chinese- and Japanese-speaking environments⏤and am fluent in MacOS
-						and Microsoft software and applications and knowledgeable in web
-						applications and the Internet. I have years of experience in, and is
-						good at, collaborative work and am a natural public speaker. I work
-						to excel and will not compromise quality merely to yield quantity or
-						meet time constraints. My motto is Do It and Do It Well.
-					</p>
-				</section>
+        <section class="experience-section" id="experience">
+          <div class="center-h2">
+            <h2 class="heading-secondary">Experience</h2>
+          </div>
 
-				<seciton class="experience-section" id="experience">
-					<h2>Experience</h2>
-					<h3>English-Chinese Translator</h3>
-					<p><strong>WritePath, October 2020 - Present</strong></p>
-					<p>
-						WritePath is an online platform for translation, copy writing and
-						copyediting with an industry focus on technical, financial and
-						medical translations. Human translation experts are supported by
-						translation technology to deliver higher quality, better consistency
-						and faster return times. I work as a freelancer in the fields of
-						corporate annual reports and website and applications.
-					</p>
-					<h3>English-Chinese Translator</h3>
-					<p>
-						<strong
-							>HouGuan Translation Co., Ltd., Novemver 2020 - Present</strong
-						>
-					</p>
-					<p>
-						HouGuan Translation Co. provides translation/interpretation services
-						in 40 languages relating to 30 categories of business communication.
-						Headquarters in Taipei, Taiwan, it's doing business in China, Hong
-						Kong, Australia and Canada as well. I do part-time
-						Chinese-to-English translation of corporate annual reports for the
-						company.
-					</p>
-					<h3>Code.7370 Trainee</h3>
-					<p>
-						<strong>The Last Mile/CALPIA, September 2016 - August 2018</strong>
-					</p>
-					<p>
-						Sponsored by The Last Mile, the innovative prisoners-to-coders
-						Code.7370 program was launched in 2014 by the California Department
-						of Corrections and Rehabilitation's Prison Industry Authority under
-						its Career Technical Education program. Trainees of the Code.7370
-						program undergo a 18-months training, learning front-end (track 1),
-						back-end (track 2) and advanced algorithm (track 3) in web apps and
-						software development and, once graduated, have the opportunity to
-						work for The Last Mile Works, a for-profit joint venture of TLM and
-						CALPIA that provides work to inmate coders for community projects. I
-						graduated the program while working for CALPIA.
-					</p>
-					<h3>News Writer and Distribution Manager</h3>
-					<p>
-						<strong>San Quentin News, November 2014 - September 2016</strong>
-					</p>
-					<p>
-						The San Quentin News is written and published by the inmates at the
-						San Quentin State Prison with the goal to promote public safety and
-						advance social justice. It is sponsored by multiple grants and
-						individual donations and distributed throughout California prisons
-						and to the community beyond. It won the award of the Society of
-						Professional Journalists for outstanding accomplishments. All of its
-						staff writers are members of the SPJ Northern California chapter,
-						who holds weekly continuing education in prison for the SQN staff. I
-						managed the publication's subscription, distribution, and business
-						analytics and, as a staff writer, spealized in legal news.
-					</p>
-				</seciton>
+          <div class="experience experience-webdev">
+            <div class="experience-wrapper">
+              <h3 class="heading-tertiary">Web Developer</h3>
+              <p class="time-active">Freelance, October 2020 - Present</p>
+              <p>
+                I have been working for small marketing firms who outsource web
+                development jobs, mostly involving Wordpress or Wordpress
+                builders, while learning prgramming basics and React with Code
+                the Dream and more advanced CSS and backend Javascript with
+                Udemy and Frontend Masters.
+              </p>
+            </div>
+          </div>
 
-				<section class="skills-section" id="skills">
-					<h2>Skills</h2>
-					<ul class="skills-list"></ul>
-				</section>
+          <div class="experience experience-wpath">
+            <div class="experience-wrapper">
+              <h3 class="heading-tertiary">English-Chinese Translator</h3>
+              <p class="time-active">WritePath, October 2020 - Present</p>
+              <p>
+                WritePath is an online platform for translation, copy writing
+                and copyediting with an industry focus on technical, financial
+                and medical translations. Human translation experts are
+                supported by translation technology to deliver higher quality,
+                better consistency and faster return times. I work as a
+                freelancer in the fields of corporate annual reports and website
+                and applications.
+              </p>
+            </div>
+          </div>
 
-				<section class="connect-section" id="connect">
-					<h2>Connect</h2>
-					<ul>
-						<li>
-							<a
-								href="mailto:chungckao@gmail.com?subject=About your online portfolio"
-								>Email</a>
-						</li>
-						<li>
-							<a href="https://github.com/Sanlung" target="_blank">GitHub</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/chung-kao/" target="_blank"
-								>LinkedIn</a
-							>
-						</li>
-					</ul>
-				</section>
+          <div class="experience experience-houguan">
+            <div class="experience-wrapper">
+              <h3 class="heading-tertiary">English-Chinese Translator</h3>
+              <p class="time-active">
+                HouGuan Translation Co., Ltd., Novemver 2020 - Present
+              </p>
+              <p>
+                HouGuan Translation Co. provides translation/interpretation
+                services in 40 languages relating to 30 categories of business
+                communication. Headquarters in Taipei, Taiwan, it's doing
+                business in China, Hong Kong, Australia and Canada as well. I do
+                part-time Chinese-to-English translation of corporate annual
+                reports for the company.
+              </p>
+            </div>
+          </div>
 
-        <section class="leave-message-section" id="leave-message">
-            <h2>Leave a Message</h2>
-            <form action="" name="leave_message">
-              <div class="name_field">
-                <label for="name">Name</label><br/>
-                <input type="text" name="name" required />
+          <div class="experience experience-7370">
+            <div class="experience-wrapper">
+              <h3 class="heading-tertiary">Code.7370 Trainee</h3>
+              <p class="time-active">
+                The Last Mile/CALPIA, September 2016 - August 2018
+              </p>
+              <p>
+                Sponsored by The Last Mile, the innovative prisoners-to-coders
+                Code.7370 program was launched in 2014 by the California
+                Department of Corrections and Rehabilitation's Prison Industry
+                Authority under its Career Technical Education program. Trainees
+                of the Code.7370 program undergo a 18-months training, learning
+                front-end (track 1), back-end (track 2) and advanced algorithm
+                (track 3) in web apps and software development and, once
+                graduated, have the opportunity to work for The Last Mile Works,
+                a for-profit joint venture of TLM and CALPIA that provides work
+                to inmate coders for community projects. I graduated the program
+                while working for CALPIA.
+              </p>
+            </div>
+          </div>
+
+          <div class="experience experience-sqn">
+            <div class="experience-wrapper">
+              <h3 class="heading-tertiary">
+                News Writer and Distribution Manager
+              </h3>
+              <p class="time-active">
+                San Quentin News, November 2014 - September 2016
+              </p>
+              <p>
+                The San Quentin News is written and published by the inmates at
+                the San Quentin State Prison with the goal to promote public
+                safety and advance social justice. It is sponsored by multiple
+                grants and individual donations and distributed throughout
+                California prisons and to the community beyond. It won the award
+                of the Society of Professional Journalists for outstanding
+                accomplishments. All of its staff writers are members of the SPJ
+                Northern California chapter, who holds weekly continuing
+                education in prison for the SQN staff. I managed the
+                publication's subscription, distribution, and business analytics
+                and, as a staff writer, spealized in legal news.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="education-section" id="education">
+          <div class="center-h2">
+            <h2 class="heading-secondary">Education</h2>
+          </div>
+
+          <div class="education-container">
+            <div class="education-wrapper">
+              <div class="schools school-columbia">
+                <div class="schools-wrapper">
+                  <img
+                    src="img/columbia-logo.png"
+                    alt="Columbia University logo"
+                  />
+                  <h3 class="heading-tertiary">Financial Empowerment</h3>
+                  <p class="time-active">Columbia Business School, Fall 2021</p>
+                  <p>
+                    Online course offered by Columbia University, prerequisite
+                    to Fundamentals of Entrepreneurship in Spring 2022.
+                  </p>
+                </div>
+                <div class="schools-back"></div>
               </div>
-              <div class="email_field">
-                <label for="email">Email address</label><br/>
-                <input type="email" name="email" required />
+
+              <div class="schools school-ctd">
+                <div class="schools-wrapper">
+                  <img src="img/ctd-logo.jpeg" alt="Code the Dream logo" />
+                  <h3 class="heading-tertiary">Coding Programs</h3>
+                  <p class="time-active">Code the Dream, May-Dec 2021</p>
+                  <p>
+                    Intro to Programming in HTML, CSS and JavaScript. Separate
+                    course on frontend in React
+                  </p>
+                </div>
               </div>
-              <div class="message_field">
-                <label for="message">Message</label><br/>
-                <textarea name="message" cols="30" rows="5" placeholder="Please leave a message..." required></textarea>
+
+              <div class="schools school-csula">
+                <div class="schools-wrapper">
+                  <img
+                    src="img/csula-logo.jpeg"
+                    alt="California State University LA logo"
+                  />
+                  <h3 class="heading-tertiary">MBA Program</h3>
+                  <p class="time-active">
+                    Cal. State University, LA, 1991-1992
+                  </p>
+                  <p>
+                    Dean's List and member of the Honor society of Phi Kappa
+                    Phi. I did not complete the program.
+                  </p>
+                </div>
+              </div>
+
+              <div class="schools school-tokai">
+                <div class="schools-wrapper">
+                  <img src="img/tokai-logo.png" alt="Tokai University logo" />
+                  <h3 class="heading-tertiary">Bachelor of Economics</h3>
+                  <p class="time-active">Tokai University, Japan, 1990</p>
+                  <p>
+                    Graduated <em>Summa Cum Laude</em> and valedictorian for the
+                    Economics Department.
+                  </p>
+                </div>
+              </div>
+
+              <div class="schools school-tamalpias">
+                <div class="schools-wrapper">
+                  <img
+                    src="img/tamalpias-logo.jpeg"
+                    alt="Mount Tamalpias College logo"
+                  />
+                  <h3 class="heading-tertiary">Assoc. of Arts program</h3>
+                  <p class="time-active">Mount Tamalpias College, thru 2019</p>
+                  <p>
+                    36 credit units toward an Associate of Arts in General
+                    Studies . Volunteer teaching assistant.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="skills-section" id="skills">
+          <div class="center-h2">
+            <h2 class="heading-secondary">Skills</h2>
+          </div>
+          <ul class="skills-list"></ul>
+        </section>
+
+        <section class="connection-wrapper">
+          <div class="connect-section" id="connect">
+            <div class="center-h2">
+              <h2 class="heading-secondary">Connect</h2>
+            </div>
+            <div class="contact-links">
+              <a
+                href="mailto:chungckao@gmail.com?subject=Regarding your portfolio site"
+                ><i class="fa fa-envelope"></i
+              ></a>
+              <a href="https://github.com/Sanlung" target="_blank"
+                ><i class="fa fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/chung-kao/" target="_blank"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+              <a class="icon-active" href="#leave-msg"
+                ><i class="fa fa-comments"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="leave-msg-section" id="leave-msg">
+            <div class="center-h2">
+              <h2 class="heading-secondary">Leave a Message</h2>
+            </div>
+            <form class="message_form" action="" name="leave_message">
+              <div>
+                <label for="name">Name</label><br />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email address</label><br />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                />
+              </div>
+              <div>
+                <label for="message">Message</label><br />
+                <textarea
+                  name="message"
+                  placeholder="Please leave a message ..."
+                  required
+                ></textarea>
               </div>
               <button type="submit">Submit</button>
             </form>
-          </section>
+          </div>
+        </section>
 
-          <section class="messages-section" id="messages">
-            <h2>Messages</h2>
-            <ul class="msg-list"></ul>
-          </section>
-			</main>
+        <section class="messages-section" id="messages">
+          <div class="center-h2">
+            <h2 class="heading-secondary">Messages</h2>
+          </div>
+          <ul class="message-list"></ul>
+        </section>
+      </main>
 
-			<footer class="footer">
-				<div class="footer-container">
-					<!-- <span>&copy; 2021 by Chung Kao</span> -->
-					<ul class="social-links">
-						<li class="social-icons"><a href="" target="_blank">Facebook</li></a>
-						<li class="social-icons"><a href="" target="_blank">Twitter</li></a>
-						<li class="social-icons"><a href="" target="_blank">Instagram</li></a>
-					</ul>
-				</div>
-			</footer>
-		</div>
-		<script src="js/index.js"></script>
-	</body>
+      <footer class="footer">
+        <ul class="social-links">
+          <li>
+            <a
+              class="fa fa-facebook-f"
+              href="https://www.facebook.com/chungckao/"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="fa fa-twitter"
+              href="https://twitter.com/ChungCKao"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="fa fa-instagram"
+              href="https://www.instagram.com/san3lung/"
+              target="_blank"
+            ></a>
+          </li>
+        </ul>
+        <!-- <p class="copyright">&copy; ${year} by Chung C. Kao</p> -->
+      </footer>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
 </html>
