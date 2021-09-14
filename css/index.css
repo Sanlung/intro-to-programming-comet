@@ -228,18 +228,10 @@ section:not(:last-child),
 
 .experience {
   padding: 10rem 0;
+  margin: 0 auto;
+  max-width: 115rem;
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-}
-
-.experience-wrapper,
-.schools-wrapper {
-  transition: all 0.3s ease;
-}
-
-.experience-wrapper:hover,
-.schools-wrapper:hover {
-  transform: scale(1.02) translateY(-5px);
 }
 
 .heading-tertiary,
@@ -278,6 +270,11 @@ section:not(:last-child),
   border-radius: 0.5rem;
   background-color: white;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.experience-wrapper:hover {
+  transform: scale(1.02) translateY(-5px);
 }
 
 .education-container {
@@ -299,6 +296,18 @@ section:not(:last-child),
   width: 100%;
   max-width: 115rem;
   margin: 0 auto;
+}
+
+.schools {
+  transition: all 0.3s ease;
+}
+
+.schools:hover {
+  transform: scale(1.02) translateY(-5px);
+}
+
+.schools:active {
+  transform: scale(1) translateY(5px);
 }
 
 .schools-wrapper {
@@ -363,7 +372,7 @@ section:not(:last-child),
   font-weight: 700;
   padding: 3rem 5rem;
   border-radius: 0.5rem;
-  background-color: #f2f2f2;
+  background-color: #eee6e6;
 }
 
 input[type="text"],
@@ -503,17 +512,35 @@ button:hover {
   .intro-text {
     transform: skew(12deg);
   }
+  .education-container {
+    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  }
   .skills-list,
   .connection-wrapper {
     width: 75%;
-    max-width: 120rem;
+    max-width: 115rem;
     margin: 0 auto;
   }
 }
 
 @media only screen and (min-width: 112.5em) {
   .education-container {
-    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    -webkit-clip-path: polygon(0 7%, 100% 0, 100% 93%, 0 100%);
+    clip-path: polygon(0 7%, 100% 0, 100% 93%, 0 100%);
+  }
+}
+
+@media only screen and (min-width: 150em) {
+  .education-container {
+    -webkit-clip-path: polygon(0 9%, 100% 0, 100% 91%, 0 100%);
+    clip-path: polygon(0 9%, 100% 0, 100% 91%, 0 100%);
+  }
+}
+
+@media only screen and (min-width: 187.5em) {
+  .education-container {
+    -webkit-clip-path: polygon(0 12%, 100% 0, 100% 88%, 0 100%);
+    clip-path: polygon(0 12%, 100% 0, 100% 88%, 0 100%);
   }
 }
