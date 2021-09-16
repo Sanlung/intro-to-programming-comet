@@ -119,7 +119,8 @@ ul {
   list-style: none;
 }
 
-a {
+a:link,
+a:visited {
   color: inherit;
   text-decoration: none;
 }
