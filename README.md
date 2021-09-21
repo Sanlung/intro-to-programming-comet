@@ -2,7 +2,7 @@
 
 ## About the Project
 
-![Site Screenshot](img/site_screenshot.png)
+![Site Screenshot](img/site-screenshot.png)
 
 This personal portfolio website is the final project of the Code the Dream's (https://codethedream.org/) Intro to Programming course, the curriculum of which is as follows:
 
