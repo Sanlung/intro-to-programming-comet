@@ -27,7 +27,7 @@
       href="img/favicon-16x16.png"
     />
     <link rel="manifest" href="img/site.webmanifest" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
@@ -41,8 +41,17 @@
 
   <body>
     <div class="page-container">
+      <button class="scroll-btn" type="button">
+        <i class="fa fa-arrow-up"></i>
+      </button>
+
       <header class="header">
-        <img class="avatar" src="img/avatar.jpg" alt="Avatar of Chung Kao" />
+        <img
+          src="img/avatar.jpg"
+          loading="lazy"
+          alt="Avatar of Chung Kao"
+          class="avatar"
+        />
         <div class="heading">
           <h1 class="heading-primary">Chung C. Kao</h1>
           <p class="tag-line">Aspiring fullstack engineer</p>
@@ -56,9 +65,10 @@
             <li><a href="#connect">Connect</a></li>
             <li>
               <img
-                class="favicon"
                 src="img/favicon.jpeg"
+                loading="lazy"
                 alt="Favicon of Chung Kao"
+                class="favicon"
               />
             </li>
           </ul>
@@ -74,6 +84,7 @@
             <figure class="profile-frame">
               <img
                 src="img/profile.jpg"
+                loading="lazy"
                 alt="Profile picture of Chung Kao"
                 class="profile-pic"
               />
@@ -201,11 +212,12 @@
 
           <div class="education-container">
             <div class="education-wrapper">
-              <div class="schools school-columbia">
+              <div class="schools schools-columbia">
                 <a href="https://www.columbia.edu/" target="_blank">
                   <div class="schools-wrapper">
                     <img
                       src="img/columbia-logo.png"
+                      loading="lazy"
                       alt="Columbia University logo"
                     />
                     <h3 class="heading-tertiary">Financial Empowerment</h3>
@@ -223,7 +235,11 @@
               <div class="schools school-ctd">
                 <a href="https://codethedream.org/" target="_blank">
                   <div class="schools-wrapper">
-                    <img src="img/ctd-logo.jpeg" alt="Code the Dream logo" />
+                    <img
+                      src="img/ctd-logo.jpeg"
+                      loading="lazy"
+                      alt="Code the Dream logo"
+                    />
                     <h3 class="heading-tertiary">Coding Programs</h3>
                     <p class="time-active">Code the Dream, May-Dec 2021</p>
                     <p>
@@ -239,6 +255,7 @@
                   <div class="schools-wrapper">
                     <img
                       src="img/csula-logo.jpeg"
+                      loading="lazy"
                       alt="California State University LA logo"
                     />
                     <h3 class="heading-tertiary">MBA Program</h3>
@@ -256,7 +273,11 @@
               <div class="schools school-tokai">
                 <a href="https://www.u-tokai.ac.jp/" target="_blank">
                   <div class="schools-wrapper">
-                    <img src="img/tokai-logo.png" alt="Tokai University logo" />
+                    <img
+                      src="img/tokai-logo.png"
+                      loading="lazy"
+                      alt="Tokai University logo"
+                    />
                     <h3 class="heading-tertiary">Bachelor of Economics</h3>
                     <p class="time-active">Tokai University, Japan, 1990</p>
                     <p>
@@ -272,6 +293,7 @@
                   <div class="schools-wrapper">
                     <img
                       src="img/tamalpias-logo.jpeg"
+                      loading="lazy"
                       alt="Mount Tamalpias College logo"
                     />
                     <h3 class="heading-tertiary">Assoc. of Arts program</h3>
@@ -365,24 +387,18 @@
       <footer class="footer">
         <ul class="social-links">
           <li>
-            <a
-              class="fa fa-facebook-f"
-              href="https://www.facebook.com/chungckao/"
-              target="_blank"
+            <a href="https://www.facebook.com/chungckao/" target="_blank"
+              ><i class="fa fa-facebook-f"></i
             ></a>
           </li>
           <li>
-            <a
-              class="fa fa-twitter"
-              href="https://twitter.com/ChungCKao"
-              target="_blank"
+            <a href="https://twitter.com/ChungCKao" target="_blank"
+              ><i class="fa fa-twitter"></i
             ></a>
           </li>
           <li>
-            <a
-              class="fa fa-instagram"
-              href="https://www.instagram.com/san3lung/"
-              target="_blank"
+            <a href="https://www.instagram.com/san3lung/" target="_blank"
+              ><i class="fa fa-instagram"></i
             ></a>
           </li>
         </ul>
