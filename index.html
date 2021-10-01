@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Chung Kao" />
+    <meta name="作者" content="高崇中" />
     <meta
       name="description"
       content="A portfolio site as a project for Code the Dream's Intro to Programming - Red Comet course"
     />
+    <meta name="簡介" content="個人簡歷資訊網頁" />
     <title>Chung Kao's Portfolio</title>
     <link
       rel="apple-touch-icon"
@@ -27,9 +29,10 @@
       href="img/favicon-16x16.png"
     />
     <link rel="manifest" href="img/site.webmanifest" />
-    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Serif+TC:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -53,23 +56,45 @@
           class="avatar"
         />
         <div class="heading">
-          <h1 class="heading-primary">Chung C. Kao</h1>
-          <p class="tag-line">Aspiring fullstack engineer</p>
+          <h1 class="heading-primary">
+            <span class="en">Chung C. Kao</span><span class="cn">高崇中</span>
+          </h1>
+          <p class="tag-line">
+            <span class="en">Aspiring fullstack engineer</span
+            ><span class="cn">即為全棧網路工程師</span>
+          </p>
         </div>
         <nav class="navbar">
           <ul class="nav-menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#connect">Connect</a></li>
             <li>
-              <img
-                src="img/favicon.jpeg"
-                loading="lazy"
-                alt="Favicon of Chung Kao"
-                class="favicon"
-              />
+              <a href="#about"
+                ><span class="en">About</span><span class="cn">簡介</span></a
+              >
+            </li>
+            <li>
+              <a href="#experience"
+                ><span class="en">Experience</span
+                ><span class="cn">簡歷</span></a
+              >
+            </li>
+            <li>
+              <a href="#education"
+                ><span class="en">Education</span
+                ><span class="cn">教育</span></a
+              >
+            </li>
+            <li>
+              <a href="#skills"
+                ><span class="en">Skills</span><span class="cn">專長</span></a
+              >
+            </li>
+            <li>
+              <a href="#connect"
+                ><span class="en">Connect</span><span class="cn">聯誼</span></a
+              >
+            </li>
+            <li>
+              <i class="fa fa-language"></i>
             </li>
           </ul>
         </nav>
@@ -78,7 +103,9 @@
       <main class="main-content">
         <section class="about-section" id="about">
           <div class="center-h2">
-            <h2 class="heading-secondary">About</h2>
+            <h2 class="heading-secondary">
+              <span class="en">About</span><span class="cn">簡介</span>
+            </h2>
           </div>
           <div class="intro">
             <figure class="profile-frame">
@@ -90,92 +117,151 @@
               />
             </figure>
             <p class="intro-text">
-              A highly-organized, detail oriented, and self-motivated individual
-              who is quick to adapt to a new or changing environment, I aspire
-              to becoming a full-stack software engineer and, with
-              determination, passion, and hard work, am committed to overcome
-              any obstacles that might come in the way. I am trilingual⏤able to
-              work in English-, Chinese- and Japanese-speaking environments⏤and
-              am fluent in MacOS and Microsoft software and applications and
-              knowledgeable in web applications and the Internet. I have years
-              of experience in, and is good at, collaborative work and am a
-              natural public speaker. I work to excel and will not compromise
-              quality merely to yield quantity or meet time constraints. My
-              motto is Do It and Do It Well.
+              <span class="en">
+                A highly organized, detail-oriented, and self-motivated
+                individual who is quick to adapt to a new or changing
+                environment, I aspire to becoming a full-stack software engineer
+                and, with determination, passion, and hard work, am committed to
+                overcome any obstacles that might come in the way. I am
+                trilingual⏤able to work in English-, Chinese- and
+                Japanese-speaking environments⏤and am fluent in MacOS and
+                Microsoft software and applications and knowledgeable in web
+                applications and the Internet. I have years of experience in,
+                and is good at, collaborative work and am a natural public
+                speaker. I work to excel and will not compromise quality merely
+                to yield quantity or meet time constraints. My motto is Do It
+                and Do It Well.
+              </span>
+              <span class="cn">
+                行事非常組織化、注重細節、自勵自發且適應力強，我熱望能成為ㄧ位全棧網路工程師，且在我的熱衷、決心與幹勁下定會克服ㄧ切障礙成就目的。我會三種語言，能在說中文、英語及日語的環境下互動，且熟悉蘋果及微軟之軟體與應用程式，亦集有關於互聯網及網路應用程式之專業知識。多年經驗下我善於職場合作，亦能自然演說，行事完善決不取質換量或以求速成。我的座右銘是「要做就做好」。
+              </span>
             </p>
           </div>
         </section>
 
         <section class="experience-section" id="experience">
           <div class="center-h2">
-            <h2 class="heading-secondary">Experience</h2>
+            <h2 class="heading-secondary">
+              <span class="en">Experience</span><span class="cn">簡歷</span>
+            </h2>
           </div>
 
           <div class="experience experience-webdev">
             <div class="experience-wrapper">
-              <h3 class="heading-tertiary">Web Developer</h3>
-              <p class="time-active">Freelance, October 2020 - Present</p>
+              <h3 class="heading-tertiary">
+                <span class="en">Web Developer</span
+                ><span class="cn">網路開發</span>
+              </h3>
+              <p class="time-active">
+                <span class="en">Freelance, October 2020 - Present</span
+                ><span class="cn">自由業網路開發：2020年10月至今</span>
+              </p>
               <p>
-                I have been working for small marketing firms who outsource web
-                development jobs, mostly involving Wordpress or Wordpress
-                builders, while learning prgramming basics and React with Code
-                the Dream and more advanced CSS and backend Javascript with
-                Udemy and Frontend Masters.
+                <span class="en">
+                  I have been working for small marketing firms who outsource
+                  web development jobs, mostly involving Wordpress or Wordpress
+                  builders, while learning prgramming basics and React with Code
+                  the Dream and more advanced CSS and backend Javascript with
+                  Udemy and Frontend Masters.
+                </span>
+                <span class="cn">
+                  為小型行銷業者做外包之網頁開發，大多基於WordPress及WordPress架構平台，同時在Code
+                  the Dream進修程式基礎及React程式庫，另在Udemy 及Frontend
+                  Masters進修高階CSS 及後端JavaScript。
+                </span>
               </p>
             </div>
           </div>
 
           <div class="experience experience-wpath">
             <div class="experience-wrapper">
-              <h3 class="heading-tertiary">English-Chinese Translator</h3>
-              <p class="time-active">WritePath, October 2020 - Present</p>
+              <h3 class="heading-tertiary">
+                <span class="en">English-Chinese Translator</span
+                ><span class="cn">中英互譯員</span>
+              </h3>
+              <p class="time-active">
+                <span class="en">WritePath, October 2020 - Present</span
+                ><span class="cn">雲翻譯： 2020年至今</span>
+              </p>
               <p>
-                WritePath is an online platform for translation, copy writing
-                and copyediting with an industry focus on technical, financial
-                and medical translations. Human translation experts are
-                supported by translation technology to deliver higher quality,
-                better consistency and faster return times. I work as a
-                freelancer in the fields of corporate annual reports and website
-                and applications.
+                <span class="en"
+                  >WritePath is an online platform for translation, copy writing
+                  and copyediting with an industry focus on technical, financial
+                  and medical translations. Human translation experts are
+                  supported by translation technology to deliver higher quality,
+                  better consistency and faster return times. I work as a
+                  freelancer in the fields of corporate annual reports and
+                  website and applications.
+                </span>
+                <span class="cn"
+                  >雲翻譯（WritePath）是ㄧ線上初稿、校稿及翻譯平台，產業領域含括科技、金融及醫務等，專業譯員在智能科技輔助下可更有效率、更ㄧ致及更快的完成譯件。我以自由業為該社翻譯企業年報及網站與網路程式等領域之文件。</span
+                >
               </p>
             </div>
           </div>
 
           <div class="experience experience-houguan">
             <div class="experience-wrapper">
-              <h3 class="heading-tertiary">English-Chinese Translator</h3>
+              <h3 class="heading-tertiary">
+                <span class="en">English-Chinese Translator</span
+                ><span class="cn">中英互譯員</span>
+              </h3>
               <p class="time-active">
-                HouGuan Translation Co., Ltd., Novemver 2020 - Present
+                <span class="en"
+                  >HouGuan Translation Co., Ltd., Novemver 2020 - Present</span
+                ><span class="cn">后冠翻譯社：2020年11月至今</span>
               </p>
               <p>
-                HouGuan Translation Co. provides translation/interpretation
-                services in 40 languages relating to 30 categories of business
-                communication. Headquarters in Taipei, Taiwan, it's doing
-                business in China, Hong Kong, Australia and Canada as well. I do
-                part-time Chinese-to-English translation of corporate annual
-                reports for the company.
+                <span class="en"
+                  >HouGuan Translation Co. provides translation/interpretation
+                  services in 40 languages relating to 30 categories of business
+                  communication. Headquarters in Taipei, Taiwan, it's doing
+                  business in China, Hong Kong, Australia and Canada as well. I
+                  do part-time Chinese-to-English translation of corporate
+                  annual reports for the company.</span
+                >
+                <span class="cn"
+                  >后冠文化股份有限公司提供在30個不同商業領域以40種不同語言做翻譯、口譯之服務。總部設於台北，但亦在中國、香港、澳洲及加拿大提供服務。我以兼職方式為該社翻譯企業年報。</span
+                >
               </p>
             </div>
           </div>
 
           <div class="experience experience-7370">
             <div class="experience-wrapper">
-              <h3 class="heading-tertiary">Code.7370 Trainee</h3>
+              <h3 class="heading-tertiary">
+                <span class="en">Code.7370 Trainee</span
+                ><span class="cn">Code.7370職訓</span>
+              </h3>
               <p class="time-active">
-                The Last Mile/CALPIA, September 2016 - August 2018
+                <span class="en"
+                  >The Last Mile/CALPIA, September 2016 - August 2018</span
+                ><span class="cn"
+                  >The Last Mile與CALPIA：2016年9月至2018年8月</span
+                >
               </p>
               <p>
-                Sponsored by The Last Mile, the innovative prisoners-to-coders
-                Code.7370 program was launched in 2014 by the California
-                Department of Corrections and Rehabilitation's Prison Industry
-                Authority under its Career Technical Education program. Trainees
-                of the Code.7370 program undergo a 18-months training, learning
-                front-end (track 1), back-end (track 2) and advanced algorithm
-                (track 3) in web apps and software development and, once
-                graduated, have the opportunity to work for The Last Mile Works,
-                a for-profit joint venture of TLM and CALPIA that provides work
-                to inmate coders for community projects. I graduated the program
-                while working for CALPIA.
+                <span class="en"
+                  >Sponsored by The Last Mile, the innovative
+                  prisoners-to-coders Code.7370 program was launched in 2014 by
+                  the California Department of Corrections and Rehabilitation's
+                  Prison Industry Authority under its Career Technical Education
+                  program. Trainees of the Code.7370 program undergo a 18-months
+                  training, learning front-end (track 1), back-end (track 2) and
+                  advanced algorithm (track 3) in web apps and software
+                  development and, once graduated, have the opportunity to work
+                  for The Last Mile Works, a for-profit joint venture of TLM and
+                  CALPIA that provides work to inmate coders for community
+                  projects. I graduated the program while working for
+                  CALPIA.</span
+                >
+                <span class="cn"
+                  >這個創新的Code.7370雇訓班將服刑人轉為程式師，加州典獄部由The
+                  Last
+                  Mile（TLM）公益組織贊助，於2014年在典獄產業署之科技職訓方案下成立。Code.7370雇訓員在18個月之集訓中學習與前端（第ㄧ期）、後端（第二期）及高階演算（第三期）有關之網路程式與軟體開發，并於完訓後得以受TLM與加州典獄產業署合作的The
+                  Last Mile
+                  Works營利企業雇用為程式師，在監為民間企業做程式工作。</span
+                >
               </p>
             </div>
           </div>
@@ -183,23 +269,31 @@
           <div class="experience experience-sqn">
             <div class="experience-wrapper">
               <h3 class="heading-tertiary">
-                News Writer and Distribution Manager
+                <span class="en">News Writer and Distribution Manager</span
+                ><span class="cn">撰寫新聞及報紙運銷</span>
               </h3>
               <p class="time-active">
-                San Quentin News, November 2014 - September 2016
+                <span class="en"
+                  >San Quentin News, November 2014 - September 2016</span
+                ><span class="cn">聖昆丁報：2014年11月至2016年9月</span>
               </p>
               <p>
-                The San Quentin News is written and published by the inmates at
-                the San Quentin State Prison with the goal to promote public
-                safety and advance social justice. It is sponsored by multiple
-                grants and individual donations and distributed throughout
-                California prisons and to the community beyond. It won the award
-                of the Society of Professional Journalists for outstanding
-                accomplishments. All of its staff writers are members of the SPJ
-                Northern California chapter, who holds weekly continuing
-                education in prison for the SQN staff. I managed the
-                publication's subscription, distribution, and business analytics
-                and, as a staff writer, spealized in legal news.
+                <span class="en"
+                  >The San Quentin News is written and published by the inmates
+                  at the San Quentin State Prison with the goal to promote
+                  public safety and advance social justice. It is sponsored by
+                  multiple grants and individual donations and distributed
+                  throughout California prisons and to the community beyond. It
+                  won the award of the Society of Professional Journalists for
+                  outstanding accomplishments. All of its staff writers are
+                  members of the SPJ Northern California chapter, who holds
+                  weekly continuing education in prison for the SQN staff. I
+                  managed the publication's subscription, distribution, and
+                  business analytics and, as a staff writer, spealized in legal
+                  news.</span
+                ><span class="cn"
+                  >聖昆丁報是由在加州聖昆丁監獄服刑人以提昇公眾安全與促進社會正義所撰寫發行，發行資金為市民捐助與多個贊助基金所提供，運銷予所有加州監所暨社會大眾，并曾獲美國職業新聞業者公會頒傑出成就獎。所有聖昆丁報雇員皆為美國職業新聞業者公會北加州分會會員，該分會亦每州至監所為聖昆丁報雇員們提供在職訓練。專撰寫法律新聞同時，我經管該報之訂閱、運銷及經營分析。</span
+                >
               </p>
             </div>
           </div>
@@ -207,113 +301,167 @@
 
         <section class="education-section" id="education">
           <div class="center-h2">
-            <h2 class="heading-secondary">Education</h2>
+            <h2 class="heading-secondary">
+              <span class="en">Education</span><span class="cn">教育</span>
+            </h2>
           </div>
 
           <div class="education-container">
             <div class="education-wrapper">
-              <div class="schools schools-columbia">
-                <a href="https://www.columbia.edu/" target="_blank">
-                  <div class="schools-wrapper">
-                    <img
-                      src="img/columbia-logo.png"
-                      loading="lazy"
-                      alt="Columbia University logo"
-                    />
-                    <h3 class="heading-tertiary">Financial Empowerment</h3>
-                    <p class="time-active">
-                      Columbia Business School, Fall 2021
-                    </p>
-                    <p>
-                      Online course offered by Columbia University, prerequisite
-                      to Fundamentals of Entrepreneurship in Spring 2022.
-                    </p>
-                  </div>
-                </a>
-              </div>
+              <a
+                class="schools schools-columbia"
+                href="https://www.columbia.edu/"
+                target="_blank"
+              >
+                <div class="schools-wrapper">
+                  <img
+                    src="img/columbia-logo.png"
+                    loading="lazy"
+                    alt="Columbia University logo"
+                  />
+                  <h3 class="heading-tertiary">
+                    <span class="en">Financial Empowerment</span
+                    ><span class="cn">個人財務</span>
+                  </h3>
+                  <p class="time-active">
+                    <span class="en">Columbia Business School, Fall 2021</span
+                    ><span class="cn">哥倫比亞大學商研所：2021年秋季班</span>
+                  </p>
+                  <p>
+                    <span class="en"
+                      >Online course offered by Columbia University,
+                      prerequisite to Fundamentals of Entrepreneurship in Spring
+                      2022.</span
+                    ><span class="cn"
+                      >哥倫比亞大學之線上課程，為創業理念2022年春季班之前必修。</span
+                    >
+                  </p>
+                </div>
+              </a>
 
-              <div class="schools school-ctd">
-                <a href="https://codethedream.org/" target="_blank">
-                  <div class="schools-wrapper">
-                    <img
-                      src="img/ctd-logo.jpeg"
-                      loading="lazy"
-                      alt="Code the Dream logo"
-                    />
-                    <h3 class="heading-tertiary">Coding Programs</h3>
-                    <p class="time-active">Code the Dream, May-Dec 2021</p>
-                    <p>
-                      Intro to Programming in HTML, CSS and JavaScript. Separate
-                      course on frontend in React
-                    </p>
-                  </div>
-                </a>
-              </div>
+              <a
+                class="schools school-ctd"
+                href="https://codethedream.org/"
+                target="_blank"
+              >
+                <div class="schools-wrapper">
+                  <img
+                    src="img/ctd-logo.jpeg"
+                    loading="lazy"
+                    alt="Code the Dream logo"
+                  />
+                  <h3 class="heading-tertiary">
+                    <span class="en">Coding Programs</span
+                    ><span class="cn">網路程式學校</span>
+                  </h3>
+                  <p class="time-active">
+                    <span class="en">Code the Dream, May-Dec 2021</span
+                    ><span class="cn">Code the Dream：2021年5月至12月</span>
+                  </p>
+                  <p>
+                    <span class="en"
+                      >Intro to Programming in HTML, CSS and JavaScript.
+                      Separate course on frontend in React</span
+                    ><span class="cn"
+                      >HTML、CSS及JavaScript之程式基礎，另前端之React程式庫。</span
+                    >
+                  </p>
+                </div>
+              </a>
 
-              <div class="schools school-csula">
-                <a href="https://www.calstatela.edu/" target="_blank">
-                  <div class="schools-wrapper">
-                    <img
-                      src="img/csula-logo.jpeg"
-                      loading="lazy"
-                      alt="California State University LA logo"
-                    />
-                    <h3 class="heading-tertiary">MBA Program</h3>
-                    <p class="time-active">
-                      Cal. State University, LA, 1991-1992
-                    </p>
-                    <p>
-                      Dean's List and member of the Honor society of Phi Kappa
-                      Phi. I did not complete the program.
-                    </p>
-                  </div>
-                </a>
-              </div>
+              <a
+                class="schools school-csula"
+                href="https://www.calstatela.edu/"
+                target="_blank"
+              >
+                <div class="schools-wrapper">
+                  <img
+                    src="img/csula-logo.jpeg"
+                    loading="lazy"
+                    alt="California State University LA logo"
+                  />
+                  <h3 class="heading-tertiary">
+                    <span class="en">MBA Program</span
+                    ><span class="cn">商學研究所</span>
+                  </h3>
+                  <p class="time-active">
+                    <span class="en">Cal. State University, LA, 1991-1992</span
+                    ><span class="cn">加州州大洛杉磯校：1991年至1992年</span>
+                  </p>
+                  <p>
+                    <span class="en"
+                      >Dean's List and member of the Honor society of Phi Kappa
+                      Phi. I did not complete the program.</span
+                    ><span class="cn"
+                      >績優生、Phi Kappa Phi榮耀社團會員，未畢業。</span
+                    >
+                  </p>
+                </div>
+              </a>
 
-              <div class="schools school-tokai">
-                <a href="https://www.u-tokai.ac.jp/" target="_blank">
-                  <div class="schools-wrapper">
-                    <img
-                      src="img/tokai-logo.png"
-                      loading="lazy"
-                      alt="Tokai University logo"
-                    />
-                    <h3 class="heading-tertiary">Bachelor of Economics</h3>
-                    <p class="time-active">Tokai University, Japan, 1990</p>
-                    <p>
-                      Graduated <em>Summa Cum Laude</em> and valedictorian for
-                      the Economics Department.
-                    </p>
-                  </div>
-                </a>
-              </div>
+              <a
+                class="schools school-tokai"
+                href="https://www.u-tokai.ac.jp/"
+                target="_blank"
+              >
+                <div class="schools-wrapper">
+                  <img
+                    src="img/tokai-logo.png"
+                    loading="lazy"
+                    alt="Tokai University logo"
+                  />
+                  <h3 class="heading-tertiary">
+                    <span class="en">Bachelor of Economics</span
+                    ><span class="cn">經濟學士</span>
+                  </h3>
+                  <p class="time-active">
+                    <span class="en">Tokai University, Japan, 1990</span
+                    ><span class="cn">日本東海大學：1990年</span>
+                  </p>
+                  <p>
+                    <span class="en"
+                      >Graduated <em>Summa Cum Laude</em> and valedictorian for
+                      the Economics Department.</span
+                    ><span class="cn"
+                      >最優等生畢業，代表經濟系畢業生致詞。</span
+                    >
+                  </p>
+                </div>
+              </a>
 
-              <div class="schools school-tamalpias">
-                <a href="https://www.mttamcollege.org/" target="_blank">
-                  <div class="schools-wrapper">
-                    <img
-                      src="img/tamalpias-logo.jpeg"
-                      loading="lazy"
-                      alt="Mount Tamalpias College logo"
-                    />
-                    <h3 class="heading-tertiary">Assoc. of Arts program</h3>
-                    <p class="time-active">
-                      Mount Tamalpias College, thru 2019
-                    </p>
-                    <p>
-                      36 credit units toward an Associate of Arts in General
-                      Studies . Volunteer teaching assistant.
-                    </p>
-                  </div>
-                </a>
-              </div>
+              <a
+                class="schools school-tamalpias"
+                href="https://www.mttamcollege.org/"
+                target="_blank"
+              >
+                <div class="schools-wrapper">
+                  <img src="img/tamalpias-logo.jpeg" loading="lazyš alt="Mount
+                  Tamalpias College logo" />
+                  <h3 class="heading-tertiary">
+                    <span class="en">Assoc. of Arts program</span
+                    ><span class="cn">準學士課程</span>
+                  </h3>
+                  <p class="time-active">
+                    <span class="en">Mount Tamalpias College, thru 2019</span
+                    ><span class="cn">Mount Tamalpias大學：至2019年</span>
+                  </p>
+                  <p>
+                    <span class="en"
+                      >36 credit units toward an Associate of Arts in General
+                      Studies. Volunteer teaching assistant.</span
+                    ><span class="cn">ㄧ般準學士之36個學分，義願講師助理</span>
+                  </p>
+                </div>
+              </a>
             </div>
           </div>
         </section>
 
         <section class="skills-section" id="skills">
           <div class="center-h2">
-            <h2 class="heading-secondary">Skills</h2>
+            <h2 class="heading-secondary">
+              <span class="en">Skills</span><span class="cn">專長</span>
+            </h2>
           </div>
           <ul class="skills-list"></ul>
         </section>
@@ -321,7 +469,9 @@
         <section class="connection-wrapper">
           <div class="connect-section" id="connect">
             <div class="center-h2">
-              <h2 class="heading-secondary">Connect</h2>
+              <h2 class="heading-secondary">
+                <span class="en">Connect</span><span class="cn">聯誼</span>
+              </h2>
             </div>
             <div class="contact-links">
               <a
@@ -342,11 +492,17 @@
 
           <div class="leave-msg-section" id="leave-msg">
             <div class="center-h2">
-              <h2 class="heading-secondary">Leave a Message</h2>
+              <h2 class="heading-secondary">
+                <span class="en">Leave a Message</span
+                ><span class="cn">留言</span>
+              </h2>
             </div>
             <form class="message_form" action="" name="leave_message">
               <div>
-                <label for="name">Name</label><br />
+                <label for="name"
+                  ><span class="en">Name</span
+                  ><span class="cn">姓名</span></label
+                ><br />
                 <input
                   type="text"
                   name="name"
@@ -355,7 +511,10 @@
                 />
               </div>
               <div>
-                <label for="email">Email address</label><br />
+                <label for="email"
+                  ><span class="en">Email address</span
+                  ><span class="cn">電子信箱</span></label
+                ><br />
                 <input
                   type="email"
                   name="email"
@@ -364,21 +523,28 @@
                 />
               </div>
               <div>
-                <label for="message">Message</label><br />
+                <label for="message"
+                  ><span class="en">Message</span
+                  ><span class="cn">留言</span></label
+                ><br />
                 <textarea
                   name="message"
                   placeholder="Please leave a message ..."
                   required
                 ></textarea>
               </div>
-              <button type="submit">Submit</button>
+              <button type="submit">
+                <span class="en">Submit</span><span class="cn">傳送</span>
+              </button>
             </form>
           </div>
         </section>
 
         <section class="messages-section" id="messages">
           <div class="center-h2">
-            <h2 class="heading-secondary">Messages</h2>
+            <h2 class="heading-secondary">
+              <span class="en">Messages</span><span class="cn">留言板</span>
+            </h2>
           </div>
           <ul class="message-list"></ul>
         </section>
@@ -406,5 +572,7 @@
       </footer>
     </div>
     <script src="js/index.js"></script>
+    <script src="js/translate.js"></script>
+    <script src="js/lazyLoad.js"></script>
   </body>
 </html>

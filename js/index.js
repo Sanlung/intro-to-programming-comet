@@ -1,14 +1,5 @@
 document.addEventListener("DOMContentLoaded", (e) => {
-  // Set copyright paragraph in footer
-  const today = new Date();
-  const thisYear = today.getFullYear();
-  const footer = document.querySelector(".footer");
-  const copyright = document.createElement("p");
-  copyright.className = "copyright";
-  copyright.innerHTML = `&copy; ${thisYear} by Chung C. Kao`;
-  footer.appendChild(copyright);
-
-  // Skills object for .skills-section
+  //  Skills list items
   const skills = [
     {
       name: "html5",
@@ -78,7 +69,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     },
   ];
 
-  // Create skills list items
+  // Display skills list items
   const skillsList = document.querySelector(".skills-list");
   for (let i = 0; i < skills.length; i++) {
     let skill = document.createElement("li");
@@ -95,7 +86,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     skillsList.appendChild(skill);
   }
 
-  // Collect and display messages on page
+  // Create and display messages and bilingual text
   const messageSection = document.querySelector(".messages-section");
   const messageForm = document.querySelector(".message_form"); // or "form[name='leave_message']"
   const messageList = messageSection.querySelector(".message-list");
@@ -136,15 +127,15 @@ document.addEventListener("DOMContentLoaded", (e) => {
     span.textContent = `${date}`;
     const p = document.createElement("p");
     p.textContent = message;
-    messageLi.append(link, span, p, createRemoveButton(), createEditButton());
+    messageLi.append(link, span, p, createEditButton(), createRemoveButton());
 
-    // Add event listener to remvoe/edit buttons
+    // Add event listener to remvoe/edit buttons for messages
     messageLi.addEventListener("click", (e) => {
       if (e.target.tagName === "BUTTON") {
         const button = e.target;
         const li = button.parentNode;
         const p = li.querySelector("p");
-        const action = button.textContent;
+        const action = button.firstElementChild.textContent;
         const buttonActions = {
           Remove: () => {
             const name = li.firstElementChild.textContent;
@@ -159,17 +150,17 @@ document.addEventListener("DOMContentLoaded", (e) => {
             textarea.value = p.textContent;
             li.insertBefore(textarea, p);
             li.removeChild(p);
-            button.textContent = "Save";
+            li.insertBefore(createSaveButton(), button);
+            li.removeChild(button);
           },
           Save: () => {
-            const textarea =
-              button.previousElementSibling.previousElementSibling;
-            const message = textarea.value;
-            const p = document.createElement("P");
-            p.textContent = message;
+            const textarea = button.previousElementSibling;
+            const p = document.createElement("p");
+            p.textContent = textarea.value;
             li.insertBefore(p, textarea);
             li.removeChild(textarea);
-            button.textContent = "Edit";
+            li.insertBefore(createEditButton(), button);
+            li.removeChild(button);
           },
         };
         buttonActions[action]();
@@ -178,20 +169,60 @@ document.addEventListener("DOMContentLoaded", (e) => {
     return messageLi;
   }
 
-  // Function to create remove button for message
+  // Set copyright paragraph in footer
+  const today = new Date();
+  const thisYear = today.getFullYear();
+  const footer = document.querySelector(".footer");
+  const copyright = document.createElement("p");
+  copyright.className = "copyright";
+  const copyrightYear = document.createElement("span");
+  copyrightYear.innerHTML = `&copy; ${thisYear} `;
+  copyright.append(
+    copyrightYear,
+    ...createBilingualSpans("by Chung Kao", "版權所有人 高崇中")
+  );
+  footer.appendChild(copyright);
+
+  // Function to create bilingual-text spans for buttons
+  function createBilingualSpans(enText, cnText) {
+    const isEnDisplayed =
+      document.querySelector(".en").style.display !== "none";
+    const enSpan = document.createElement("span");
+    enSpan.className = "en";
+    enSpan.textContent = enText;
+    const cnSpan = document.createElement("span");
+    cnSpan.className = "cn";
+    cnSpan.textContent = cnText;
+    if (isEnDisplayed) {
+      cnSpan.style.display = "none";
+    } else {
+      enSpan.style.display = "none";
+    }
+    return [enSpan, cnSpan];
+  }
+
+  // Function to create Remove button for message
   function createRemoveButton() {
     const removeButton = document.createElement("button");
-    removeButton.textContent = "Remove";
     removeButton.type = "button";
+    removeButton.append(...createBilingualSpans("Remove", "刪除"));
     return removeButton;
   }
 
-  // Function to create edit button for message
+  // Function to create Edit button for message
   function createEditButton() {
     const editButton = document.createElement("button");
-    editButton.textContent = "Edit";
     editButton.type = "button";
+    editButton.append(...createBilingualSpans("Edit", "修改"));
     return editButton;
+  }
+
+  // Function to create Save button for messages
+  function createSaveButton() {
+    const saveButton = document.createElement("button");
+    saveButton.type = "button";
+    saveButton.append(...createBilingualSpans("Save", "留存"));
+    return saveButton;
   }
 
   // Function to display or hide #messges section
@@ -202,6 +233,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
       messageSection.style.display = "";
     }
   }
+
   // Function to retrieve messages from local storage
   function getStoredMessages() {
     const messages = localStorage.getItem("storedMessages");
@@ -224,73 +256,4 @@ document.addEventListener("DOMContentLoaded", (e) => {
       messageList.insertAdjacentElement("afterbegin", messageLi);
     });
   }
-
-  // IIFE to dynamically load/transform HTML elements
-  (function () {
-    const navbar = document.querySelector(".navbar");
-    const scrollBtn = document.querySelector(".scroll-btn");
-    let scrollpos = window.scrollY;
-    const intro = document.querySelector(".intro");
-    const experiences = document.querySelectorAll(".experience-wrapper");
-    const profileFrame = document.querySelector(".profile-frame");
-    const introText = document.querySelector(".intro-text");
-    let windowHeight, windowWidth;
-
-    function checkScroll() {
-      scrollpos = window.scrollY;
-      if (scrollpos > 100) {
-        navbar.style.backgroundColor = "#161616";
-        navbar.style.boxShadow = "0 5px 20px -10px #000";
-      } else {
-        navbar.style.backgroundColor = "";
-        navbar.style.boxShadow = "";
-      }
-      scrollpos > 600
-        ? (scrollBtn.style.display = "block")
-        : (scrollBtn.style.display = "none");
-    }
-
-    function scrollToTop() {
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
-    }
-    function init() {
-      windowHeight = window.innerHeight;
-      windowWidth = window.innerWidth;
-    }
-
-    function checkPosition() {
-      let introFromTop = intro.getBoundingClientRect().top;
-      if (introFromTop - windowHeight <= 0) {
-        intro.style.opacity = 1;
-        intro.style.animation = "fadeInIntro 1.5s ease-out";
-        if (windowWidth >= 1200) {
-          profileFrame.style.animation = "fadeInProfile 1.5s ease-out";
-          introText.style.animation = "fadeInText 1.5s ease-out";
-        }
-      }
-      experiences.forEach((experience) => {
-        let experienceFromTop = experience.getBoundingClientRect().top;
-        if (experienceFromTop - windowHeight <= 0) {
-          experience.style.opacity = 1;
-          experience.style.animation = "fadeInOthers 1.5s ease-out";
-        }
-      });
-    }
-
-    function handleScroll() {
-      checkScroll();
-      checkPosition();
-    }
-
-    window.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", init);
-    scrollBtn.addEventListener("click", scrollToTop);
-
-    init();
-    checkPosition();
-  })();
 });
