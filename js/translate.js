@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     if (cnText[0].style.display === "none") {
       for (let i = 0; i < cnText.length; i++) {
         body.style.fontFamily = "'Noto Serif TC', serif";
+        body.style.writingMode = "horizontal-tb";
         cnText[i].style.display = "inline";
         enText[i].style.display = "none";
         nameInput.placeholder = "您的全名";
