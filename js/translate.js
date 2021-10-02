@@ -15,8 +15,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     if (cnText[0].style.display === "none") {
       for (let i = 0; i < cnText.length; i++) {
         body.style.fontFamily = "'Noto Serif TC', serif";
-        body.style.writingMode = "horizontal-tb";
-        cnText[i].style.display = "inline";
+        cnText[i].style.display = "contents";
         enText[i].style.display = "none";
         nameInput.placeholder = "您的全名";
         emailInput.placeholder = "電子信箱帳號";
@@ -24,9 +23,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
       }
     } else {
       for (let i = 0; i < cnText.length; i++) {
-        body.style.fontFamily = "'Lato', sans-serif";
+        body.style.fontFamily = "'Lato', sans serif";
         cnText[i].style.display = "none";
-        enText[i].style.display = "inline";
+        enText[i].style.display = "contents";
         nameInput.placeholder = "Your full name";
         emailInput.placeholder = "Your email address";
         textInput.placeholder = "Please leave a message ...";

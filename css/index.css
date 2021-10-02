@@ -40,7 +40,6 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  /* font-family: "Noto Serif TC", serif; */
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.7;
@@ -55,8 +54,60 @@ p span {
   hyphens: auto;
 }
 
+button {
+  color: #04aa6d;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 700;
+  margin-right: 5rem;
+  padding: 1.5rem 2.5rem;
+  width: 10rem;
+  border: none;
+  border-bottom: 0.1rem solid #55c57a;
+  background-color: inherit;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  color: white;
+  background-color: #9fddb4;
+  box-shadow: 0 1.5rem 2rem rgba(1, 143, 100, 0.2);
+}
+
 .cn {
   display: none;
+}
+
+/* Nav-toggle & Scroll Button */
+
+.nav-toggle-btn,
+.scroll-btn {
+  font-size: 2rem;
+  position: fixed;
+  right: 3rem;
+  z-index: 10;
+  width: 5rem;
+  height: 5rem;
+  margin: 0;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: floralwhite;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.nav-toggle-btn {
+  top: 3rem;
+}
+
+.scroll-btn {
+  display: none;
+  bottom: 3rem;
+}
+
+.scroll-btn:hover,
+.nav-toggle-btn:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
 }
 
 /* Header */
@@ -112,6 +163,7 @@ p span {
 .tag-line {
   font-weight: 700;
   font-size: 1.5rem;
+  writing-mode: horizontal-tb;
   animation: moveInRight 1s ease-out;
 }
 
@@ -124,10 +176,11 @@ p span {
 .navbar {
   position: fixed;
   z-index: 10;
-  top: 0;
+  top: -10rem;
   left: 0;
   width: 100%;
   padding: 3rem 0;
+  transition: top 0.8s ease;
 }
 
 ul {
@@ -152,6 +205,7 @@ a:visited {
 
 .nav-menu > li:not(:last-child) {
   margin-right: 1rem;
+  writing-mode: horizontal-tb;
 }
 
 .nav-menu > li:hover,
@@ -423,28 +477,6 @@ textarea {
   resize: vertical;
 }
 
-button {
-  color: #04aa6d;
-  font-size: 1.6rem;
-  font-family: inherit;
-  font-weight: 700;
-  margin-right: 5rem;
-  padding: 1.5rem 2.5rem;
-  width: 10rem;
-  border: none;
-  cursor: pointer;
-  border-bottom: 0.1rem solid #55c57a;
-  background-color: inherit;
-  border-radius: 0.5rem;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  color: white;
-  background-color: #9fddb4;
-  box-shadow: 0 1.5rem 2rem rgba(1, 143, 100, 0.2);
-}
-
 .message-list {
   width: 100%;
   margin: 0 auto;
@@ -470,36 +502,12 @@ button:hover {
   margin: 1rem 0 2.5rem 0;
 }
 
-/* Scroll Button */
-
-.scroll-btn {
-  display: none;
-  font-size: 2rem;
-  position: fixed;
-  bottom: 4rem;
-  right: 4rem;
-  z-index: 10;
-  width: 5rem;
-  height: 5rem;
-  margin: 0;
-  padding: 1rem;
-  border: none;
-  cursor: pointer;
-  border-radius: 50%;
-  background-color: floralwhite;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
-}
-
-.scroll-btn:hover {
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
-}
-
 /* Footer */
 
 .footer {
   color: white;
   background-color: #161616;
-  padding: 3rem 0;
+  padding: 2rem 0;
   text-align: center;
   /* box-shadow: 0 -5px 20px -10px #000; */
 }
@@ -646,6 +654,12 @@ button:hover {
 }
 
 @media only screen and (min-width: 56.25em) {
+  .nav-toggle-btn {
+    z-index: 0;
+  }
+  .navbar {
+    top: 0;
+  }
   .intro {
     transform: skewX(-12deg);
   }

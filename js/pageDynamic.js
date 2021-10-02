@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", (e) => {
   (function () {
     const navbar = document.querySelector(".navbar");
+    const navMenu = document.querySelector(".nav-menu");
     const scrollBtn = document.querySelector(".scroll-btn");
-    let scrollpos = window.scrollY;
+    const navToggleBtn = document.querySelector(".nav-toggle-btn");
     const intro = document.querySelector(".intro");
     const experiences = document.querySelectorAll(".experience-wrapper");
     const profileFrame = document.querySelector(".profile-frame");
     const introText = document.querySelector(".intro-text");
+    let scrollpos = window.scrollY;
     let windowHeight, windowWidth;
 
     function checkScroll() {
@@ -30,6 +32,19 @@ document.addEventListener("DOMContentLoaded", (e) => {
         behavior: "smooth",
       });
     }
+
+    function showNavbar() {
+      navToggleBtn.style.zIndex = 0;
+      navbar.style.top = 0;
+    }
+
+    function showNavToggleBtn() {
+      if (windowWidth <= 900) {
+        navbar.style.top = "-10rem";
+        navToggleBtn.style.zIndex = 10;
+      }
+    }
+
     function init() {
       windowHeight = window.innerHeight;
       windowWidth = window.innerWidth;
@@ -53,6 +68,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         }
       });
     }
+
     function handleScroll() {
       checkScroll();
       checkPosition();
@@ -61,6 +77,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", init);
     scrollBtn.addEventListener("click", scrollToTop);
+    navToggleBtn.addEventListener("click", showNavbar);
+    navMenu.addEventListener("click", showNavToggleBtn);
 
     init();
     checkPosition();
