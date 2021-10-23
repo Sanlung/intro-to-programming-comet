@@ -118,8 +118,9 @@ button:hover {
   flex-flow: column nowrap;
   justify-content: flex-end;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
+  margin-bottom: 6rem;
   color: white;
   text-align: center;
   text-transform: uppercase;
@@ -130,47 +131,7 @@ button:hover {
       rgba(0, 0, 0, 0.5) 50%,
       rgba(0, 0, 0, 0.3) 100%
     ),
-    center / cover url(../img/hero.jpg);
-}
-
-.avatar {
-  width: 20rem;
-  border-radius: 50%;
-  margin-bottom: 5rem;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease;
-  animation: moveInBottom 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
-}
-
-.avatar:hover {
-  transform: scale(1.05) translateY(-0.5rem);
-  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-}
-
-.heading {
-  margin-bottom: 5rem;
-  backface-visibility: hidden;
-}
-
-.heading-primary {
-  font-size: 3.5rem;
-  font-weight: 900;
-  letter-spacing: 0.5rem;
-  animation: moveInLeft 1s ease-out;
-}
-
-.tag-line {
-  font-weight: 700;
-  font-size: 1.5rem;
-  writing-mode: horizontal-tb;
-  animation: moveInRight 1s ease-out;
-}
-
-.heading-secondary,
-.tag-line {
-  letter-spacing: 0.3rem;
-  padding: 2rem 0;
+    top / cover url(../img/hero.jpg);
 }
 
 .navbar {
@@ -228,6 +189,46 @@ button:hover,
 button:active,
 .skill-logo:active {
   transform: scale(1) translateX(-1px) translateY(2px);
+}
+
+.avatar {
+  width: 20rem;
+  border-radius: 50%;
+  margin-bottom: -6rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  animation: moveInTop 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.avatar:hover {
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+}
+
+.heading {
+  margin-bottom: 5rem;
+  backface-visibility: hidden;
+}
+
+.heading-primary {
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  animation: moveInLeft 1s ease-out;
+}
+
+.tag-line {
+  font-weight: 700;
+  font-size: 1.5rem;
+  writing-mode: horizontal-tb;
+  animation: moveInRight 1s ease-out;
+}
+
+.heading-secondary,
+.tag-line {
+  letter-spacing: 0.3rem;
+  padding: 2rem 0;
 }
 
 /* Main Content */
@@ -554,10 +555,10 @@ textarea {
   }
 }
 
-@keyframes moveInBottom {
+@keyframes moveInTop {
   0% {
     opacity: 0;
-    transform: translateY(3rem);
+    transform: translateY(-3rem);
   }
 
   100% {
