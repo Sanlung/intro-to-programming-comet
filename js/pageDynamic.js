@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     }
 
     function showNavbar() {
-      navToggleBtn.style.zIndex = 0;
+      navToggleBtn.style.zIndex = -1;
       navbar.style.top = 0;
     }
 

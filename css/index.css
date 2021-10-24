@@ -112,26 +112,11 @@ button:hover {
 
 /* Header */
 
-.header {
-  position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  height: 80vh;
-  width: 100%;
-  margin-bottom: 6rem;
+header {
   color: white;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.4);
-  background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0, 0.3) 100%
-    ),
-    top / cover url(../img/hero.jpg);
 }
 
 .navbar {
@@ -191,23 +176,26 @@ button:active,
   transform: scale(1) translateX(-1px) translateY(2px);
 }
 
-.avatar {
-  width: 20rem;
-  border-radius: 50%;
-  margin-bottom: -6rem;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease;
-  animation: moveInTop 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
-}
-
-.avatar:hover {
-  transform: scale(1.05) translateY(-0.5rem);
-  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+.header {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  height: 85vh;
+  width: 100%;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    top / cover url(../img/hero.jpg);
+  -webkit-clip-path: polygon(0 0, 100% 100%, 100% 93%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
 }
 
 .heading {
-  margin-bottom: 5rem;
+  margin-bottom: 20rem;
   backface-visibility: hidden;
 }
 
@@ -246,6 +234,22 @@ button:active,
   align-items: center;
 }
 
+.avatar {
+  width: 20rem;
+  margin-top: -20rem;
+  z-index: 1;
+  border-radius: 50%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  animation: moveInTop 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.avatar:hover {
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+}
+
 section {
   position: relative;
   width: 100%;
@@ -271,6 +275,10 @@ section:not(:last-child),
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.about-section .heading-secondary {
+  margin-top: 6rem;
 }
 
 .intro {
@@ -558,11 +566,13 @@ textarea {
 @keyframes moveInTop {
   0% {
     opacity: 0;
-    transform: translateY(-3rem);
+    transform: translateY(-10rem);
   }
-
-  100% {
+  80% {
     opacity: 1;
+    transform: translateY(1rem);
+  }
+  100% {
     transform: translateY(0);
   }
 }
@@ -656,7 +666,7 @@ textarea {
 
 @media only screen and (min-width: 56.25em) {
   .nav-toggle-btn {
-    z-index: 0;
+    z-index: -1;
   }
   .navbar {
     top: 0;
