@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     }
 
     function showNavbar() {
-      navToggleBtn.style.zIndex = -1;
+      navToggleBtn.style.zIndex = 0;
       navbar.style.top = 0;
     }
 
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     function checkPosition() {
       let introFromTop = intro.getBoundingClientRect().top;
-      if (introFromTop - windowHeight <= 0) {
+      if (introFromTop - windowHeight <= -300) {
         intro.style.opacity = 1;
         intro.style.animation = "fadeInIntro 1.5s ease-out";
         if (windowWidth >= 1200) {
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
       }
       experiences.forEach((experience) => {
         let experienceFromTop = experience.getBoundingClientRect().top;
-        if (experienceFromTop - windowHeight <= 0) {
+        if (experienceFromTop - windowHeight <= -300) {
           experience.style.opacity = 1;
           experience.style.animation = "fadeInOthers 1.5s ease-out";
         }
