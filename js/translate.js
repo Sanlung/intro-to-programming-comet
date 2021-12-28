@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     const cnText = document.querySelectorAll(".cn");
     if (cnText[0].style.display === "none") {
       for (let i = 0; i < cnText.length; i++) {
-        body.style.fontFamily = "'Noto Serif TC', serif";
+        body.style.fontFamily = "'Noto Sans TC', sans serif";
         cnText[i].style.display = "contents";
         enText[i].style.display = "none";
         nameInput.placeholder = "您的全名";

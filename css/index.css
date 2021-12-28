@@ -389,6 +389,10 @@ section:not(:last-child),
   backface-visibility: hidden;
 }
 
+.school-pia-tlm img {
+  background-color: black;
+}
+
 .schools:link,
 .schools:visited {
   width: 30rem;
