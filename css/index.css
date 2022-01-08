@@ -77,6 +77,7 @@ button:hover {
 
 .cn {
   display: none;
+  writing-mode: horizontal-tb;
 }
 
 /* Nav-toggle & Scroll Button */
@@ -151,7 +152,10 @@ a:visited {
 
 .nav-menu > li:not(:last-child) {
   margin-right: 1rem;
-  writing-mode: horizontal-tb;
+}
+
+.nav-menu > li:last-child {
+  text-transform: none;
 }
 
 .nav-menu > li:hover,
