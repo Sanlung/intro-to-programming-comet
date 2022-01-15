@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         navbar.style.backgroundColor = "";
         navbar.style.boxShadow = "";
       }
-      scrollpos > 600
+      scrollpos > 500
         ? (scrollBtn.style.display = "block")
         : (scrollBtn.style.display = "none");
     }

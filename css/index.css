@@ -158,6 +158,18 @@ a:visited {
   text-transform: none;
 }
 
+.lang-bubble {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: red;
+  border-radius: 50%;
+
+  transform: translate(-0.5rem, -1rem);
+}
+
 .nav-menu > li:hover,
 .social-links > li:hover {
   color: rgb(170, 231, 255);
@@ -185,7 +197,7 @@ button:active,
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
-  height: 85vh;
+  height: 75vh;
   width: 100%;
   background: linear-gradient(
       to right,
