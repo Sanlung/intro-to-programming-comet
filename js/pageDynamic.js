@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     function checkScroll() {
       scrollpos = window.scrollY;
       if (scrollpos > 100) {
-        navbar.style.backgroundColor = "#161616";
+        navbar.style.backgroundColor = "#04aa6d";
         navbar.style.boxShadow = "0 5px 20px -10px #000";
       } else {
         navbar.style.backgroundColor = "";
