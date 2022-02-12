@@ -4,7 +4,7 @@
 
 ![Site Screenshot](img/site-screenshot.png)
 
-This personal portfolio website is the final project of the Code the Dream's (https://codethedream.org/) Intro to Programming course, the curriculum of which is as follows:
+This personal portfolio website is the final project of the [Code the Dream's](https://codethedream.org/) Intro to Programming course, the curriculum of which is as follows:
 
 > ## Overview
 >
@@ -63,10 +63,10 @@ This personal portfolio website is the final project of the Code the Dream's (ht
 >
 > Created by [Code the Dream](https://www.codethedream.org)
 
-The static website is published at https://sanlung.github.io/
+The static website is published through GitHub Pages [here](https://sanlung.github.io/).
 
-### Contact
+### Author
 
-Author: Chung Kao
+[![Chung Kao](img/Chung_button.svg)](https://github.com/Sanlung)
 
-Project Link: https://github.com/Sanlung/sanlung.github.io/
+[Project Link](https://github.com/Sanlung/sanlung.github.io/)
