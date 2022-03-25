@@ -26,6 +26,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
       link: "https://reactjs.org/",
     },
     {
+      name: "bootstrap",
+      src: "img/bootstrap-logo.svg",
+      alt: "Bootstrap logo",
+      link: "https://getbootstrap.com/",
+    },
+    {
       name: "node",
       src: "img/nodejs-logo.svg",
       alt: "Node.js logo",
@@ -44,10 +50,28 @@ document.addEventListener("DOMContentLoaded", (e) => {
       link: "https://www.mongodb.com/",
     },
     {
-      name: "bootstrap",
-      src: "img/bootstrap-logo.svg",
-      alt: "Bootstrap logo",
-      link: "https://getbootstrap.com/",
+      name: "python",
+      src: "img/python-logo.svg",
+      alt: "Python logo",
+      link: "https://www.python.org/",
+    },
+    {
+      name: "django",
+      src: "img/django-logo.svg",
+      alt: "Django logo",
+      link: "https://www.djangoproject.com/",
+    },
+    {
+      name: "rails",
+      src: "img/rails-logo.svg",
+      alt: "Ruby on Rails logo",
+      link: "https://rubyonrails.org/",
+    },
+    {
+      name: "sqlite",
+      src: "img/sqlite-logo.svg",
+      alt: "SQL logo",
+      link: "https://sqlite.org/index.html",
     },
     {
       name: "jquery",
@@ -60,12 +84,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
       src: "img/wordpress-logo.svg",
       alt: "Wordpress logo",
       link: "https://wordpress.org/",
-    },
-    {
-      name: "python",
-      src: "img/python-logo.svg",
-      alt: "Python logo",
-      link: "https://www.python.org/",
     },
   ];
 

@@ -34,13 +34,15 @@ document.addEventListener("DOMContentLoaded", (e) => {
     }
 
     function showNavbar() {
+      navToggleBtn.style.transition = "reset";
       navToggleBtn.style.zIndex = 0;
       navbar.style.top = 0;
     }
 
     function showNavToggleBtn() {
       if (windowWidth <= 900) {
-        navbar.style.top = "-10rem";
+        navbar.style.top = "-40rem";
+        navToggleBtn.style.transition = "z-index 0.2s ease 0.6s";
         navToggleBtn.style.zIndex = 10;
       }
     }
