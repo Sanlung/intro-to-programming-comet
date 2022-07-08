@@ -521,7 +521,7 @@ section:not(:last-child),
   min-width: 15rem;
   margin: 0 auto;
   background-color: #555;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
 }
 
 .icon-active {
