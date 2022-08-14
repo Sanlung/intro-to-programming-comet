@@ -14,18 +14,18 @@ document.addEventListener("DOMContentLoaded", (e) => {
   // Add event listener to toggle language options
   langTogBtn.addEventListener("click", (e) => {
     if (cnText[0].style.display === "none") {
+      body.style.fontFamily = "'Noto Sans TC', sans serif";
       for (let i = 0; i < cnText.length; i++) {
-        body.style.fontFamily = "'Noto Sans TC', sans serif";
-        cnText[i].style.display = "contents";
         enText[i].style.display = "none";
+        cnText[i].style.display = "contents";
       }
       langBubble.textContent = "英";
       nameInput.placeholder = "您的全名";
       emailInput.placeholder = "電子信箱帳號";
       textInput.placeholder = "請於此留言";
     } else {
+      body.style.fontFamily = "'Lato', sans serif";
       for (let i = 0; i < cnText.length; i++) {
-        body.style.fontFamily = "'Lato', sans serif";
         cnText[i].style.display = "none";
         enText[i].style.display = "contents";
       }
