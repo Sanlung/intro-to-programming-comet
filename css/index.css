@@ -156,20 +156,16 @@ header {
   margin-bottom: 1rem;
 }
 
-.nav-menu > li:last-child {
-  text-transform: none;
-}
-
 .lang-bubble {
   display: inline-block;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.9rem;
+  height: 1.9rem;
   background: red;
   border-radius: 50%;
-
-  transform: translate(-0.5rem, -1rem);
+  text-transform: none;
+  transform: translate(-0.7rem, -1.2rem);
 }
 
 .nav-menu > li:hover,
