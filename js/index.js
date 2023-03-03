@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
       link: "https://reactjs.org/",
     },
     {
-      name: "bootstrap",
-      src: "img/bootstrap-logo.svg",
-      alt: "Bootstrap logo",
-      link: "https://getbootstrap.com/",
+      name: "nextjs",
+      src: "img/next-js-logo.svg",
+      alt: "Next.js logo",
+      link: "https://nextjs.org/",
     },
     {
       name: "node",
@@ -50,6 +50,18 @@ document.addEventListener("DOMContentLoaded", (e) => {
       link: "https://www.mongodb.com/",
     },
     {
+      name: "sqlite",
+      src: "img/sqlite-logo.svg",
+      alt: "SQL logo",
+      link: "https://sqlite.org/index.html",
+    },
+    {
+      name: "postgresql",
+      src: "img/postgresql-logo.svg",
+      alt: "PostgreSQL logo",
+      link: "https://www.postgresql.org/",
+    },
+    {
       name: "python",
       src: "img/python-logo.svg",
       alt: "Python logo",
@@ -68,10 +80,16 @@ document.addEventListener("DOMContentLoaded", (e) => {
       link: "https://rubyonrails.org/",
     },
     {
-      name: "sqlite",
-      src: "img/sqlite-logo.svg",
-      alt: "SQL logo",
-      link: "https://sqlite.org/index.html",
+      name: "wordpress",
+      src: "img/wordpress-logo.svg",
+      alt: "Wordpress logo",
+      link: "https://wordpress.org/",
+    },
+    {
+      name: "bootstrap",
+      src: "img/bootstrap-logo.svg",
+      alt: "Bootstrap logo",
+      link: "https://getbootstrap.com/",
     },
     {
       name: "jquery",
@@ -80,10 +98,22 @@ document.addEventListener("DOMContentLoaded", (e) => {
       link: "https://jquery.com/",
     },
     {
-      name: "wordpress",
-      src: "img/wordpress-logo.svg",
-      alt: "Wordpress logo",
-      link: "https://wordpress.org/",
+      name: "jest",
+      src: "img/jest-logo.svg",
+      alt: "Jest logo",
+      link: "https://jestjs.io/",
+    },
+    {
+      name: "jasmine",
+      src: "img/jasmine-logo.svg",
+      alt: "Jasmine logo",
+      link: "https://jasmine.github.io/",
+    },
+    {
+      name: "mocha",
+      src: "img/mocha-logo.svg",
+      alt: "Mocha logo",
+      link: "https://mochajs.org/",
     },
   ];
 
